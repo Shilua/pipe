@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FiltroComponent } from './filtro/filtro.component';
 import { TablaComponent } from './tabla/tabla.component';
+import { FiltroPipe } from './filtro.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     FiltroComponent,
-    TablaComponent
+    TablaComponent,
+    FiltroPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

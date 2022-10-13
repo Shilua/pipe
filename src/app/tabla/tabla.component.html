@@ -1,1 +1,13 @@
-<p>tabla works!</p>
+<input type="text" name="" [(ngModel)]="variable">
+<table>
+  <thead>
+    <th>motivo</th>
+    <th>fecha</th>
+  </thead>
+  <tbody>
+    <div *ngFor=" let fer of feriados ">
+      <td>{{fer.motivo}}</td>
+      <td>{{fer.dia}}/{{fer.mes}}</td>
+    </div>
+  </tbody>
+</table>
