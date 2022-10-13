@@ -7,13 +7,15 @@ import { FiltroComponent } from './filtro/filtro.component';
 import { TablaComponent } from './tabla/tabla.component';
 import { FiltroPipe } from './filtro.pipe';
 import { FormsModule } from '@angular/forms';
+import { DiasHastaPipe } from './dias-hasta.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     FiltroComponent,
     TablaComponent,
-    FiltroPipe
+    FiltroPipe,
+    DiasHastaPipe
   ],
   imports: [
     BrowserModule,
