@@ -5,7 +5,7 @@
     <th>fecha</th>
   </thead>
   <tbody>
-    <div *ngFor=" let fer of feriados ">
+    <div *ngFor=" let fer of feriados | filtro : variable ">
       <td>{{fer.motivo}}</td>
       <td>{{fer.dia}}/{{fer.mes}}</td>
     </div>
